@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ujian_design</string>
+    <string name="menu_main_home">Home</string>
+    <string name="menu_main_feed">Feed</string>
+    <string name="menu_main_official_store">Official store</string>
+    <string name="menu_main_wishlist">Wishlist</string>
+    <string name="menu_main_transaksi">transaksi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

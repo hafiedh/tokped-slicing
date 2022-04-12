@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_main_home"
+        android:icon="@drawable/ic_home"
+        android:orderInCategory="100"
+        android:title="@string/menu_main_home"
+        />
+    <item
+        android:id="@+id/menu_main_feed"
+        android:icon="@drawable/ic_feed"
+        android:orderInCategory="200"
+        android:title="@string/menu_main_feed"
+        />
+    <item
+        android:id="@+id/menu_main_official_store"
+        android:icon="@drawable/ic_official_store"
+        android:orderInCategory="300"
+        android:title="@string/menu_main_official_store" />
+    <item
+        android:id="@+id/menu_main_wishlist"
+        android:icon="@drawable/ic_wishlist"
+        android:orderInCategory="400"
+        android:title="@string/menu_main_wishlist"
+        />
+    <item
+        android:id="@+id/menu_main_transaksi"
+        android:icon="@drawable/ic_transaksi"
+        android:orderInCategory="500"
+        android:title="@string/menu_main_transaksi"
+        />
+
+
+</menu>
