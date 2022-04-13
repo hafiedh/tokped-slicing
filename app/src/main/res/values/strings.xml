@@ -7,4 +7,25 @@
     <string name="menu_main_transaksi">transaksi</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- String Menu Scroll   -->
+    <string name="menu_tokped_1">Official\nStore</string>
+    <string name="menu_tokped_2">Lihat\nSemua</string>
+    <string name="menu_tokped_3">Elektronik</string>
+    <string name="menu_tokped_4">Kebutuhan\nHarian</string>
+    <string name="menu_tokped_5">Top-Up &amp;\nTagihan</string>
+    <string name="menu_tokped_6">Office &amp;\nStationery</string>
+    <string name="menu_tokped_7">Keuangan</string>
+    <string name="menu_tokped_8">Travel &amp;\nEntertaiment</string>
+    <string name="menu_tokped_9">Perlengkapan\nPesta</string>
+
+    <string name="scnd_menu_tokped_1">Peduli\nLindungi</string>
+    <string name="scnd_menu_tokped_2">Bazar Hari\nIni</string>
+    <string name="scnd_menu_tokped_3">Live\nShopping</string>
+    <string name="scnd_menu_tokped_4">Tokopedia\nSeru</string>
+    <string name="scnd_menu_tokped_5">Bangga\nLokal</string>
+    <string name="scnd_menu_tokped_6">Bayar di\nTempat</string>
+    <string name="scnd_menu_tokped_7">Promo di\nSurabaya</string>
+    <!--  End String Menu Scroll  -->
+
 </resources>
