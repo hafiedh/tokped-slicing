@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        // set default fragment
         replaceFragment(HomeFragment())
         initBottomNavigation()
         setSupportActionBar(binding.toolbar)
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initBottomNavigation() {
+        // set item with menu for bottom navigation and replace fragment base on user click
         binding.bnvMain.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.menu_main_home -> {
@@ -46,7 +48,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
+   // replace fragment
    private fun replaceFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction()
             .replace(R.id.fl_main, fragment)

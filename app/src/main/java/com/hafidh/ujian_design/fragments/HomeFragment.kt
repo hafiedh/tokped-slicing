@@ -21,6 +21,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         initViewPager()
     }
 
+    // init view pager
     private fun initViewPager() {
         val img = listOf(R.drawable.iklan_banner_satu, R.drawable.iklan_banner_dua, R.drawable.iklan_banner_tiga)
         binding.pagerSlider.adapter = ViewPagerAdapter(img)
