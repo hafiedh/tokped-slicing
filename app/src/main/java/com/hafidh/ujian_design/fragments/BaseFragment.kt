@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
-import com.hafidh.ujian_design.R
 
 abstract class BaseFragment<out T: ViewBinding>: Fragment() {
     private var _binding: ViewBinding? = null
@@ -27,7 +26,6 @@ abstract class BaseFragment<out T: ViewBinding>: Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
 
     protected abstract val bindingInflater: (LayoutInflater) -> ViewBinding
 
