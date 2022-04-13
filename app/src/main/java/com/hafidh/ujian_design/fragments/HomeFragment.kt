@@ -16,7 +16,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         get() = FragmentHomeBinding::inflate
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        // todo disini
         binding.toolbar.inflateMenu(R.menu.menu_appbar)
         initViewPager()
     }
@@ -41,7 +40,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
                 handler.postDelayed(this, 3000)
             }
         }
-        handler.postDelayed(runnable, 1000)
+
+        handler.postDelayed(runnable, 3000)
     }
 
 
