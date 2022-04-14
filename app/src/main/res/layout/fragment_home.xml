@@ -456,7 +456,7 @@
         android:layout_marginTop="34dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:background="@color/black"
+        tools:background="@color/black"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -634,6 +634,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
     <!--  End Constraint Mini Menu 2 -->
 
+<!--  Constraint Title Kejar Diskon  -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/const_kejar_diskon"
         android:layout_width="match_parent"
@@ -655,7 +656,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/txt_end_diskon"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -668,14 +669,14 @@
             app:layout_constraintTop_toBottomOf="@+id/card_diskon" />
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/card_countdown"
+            android:id="@+id/time_cd"
             android:layout_width="120dp"
             android:layout_height="20dp"
             app:cardBackgroundColor="#E81D1D"
             android:layout_marginStart="5dp"
             app:cardCornerRadius="30dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView">
+            app:layout_constraintStart_toEndOf="@+id/txt_end_diskon">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -720,4 +721,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+<!--  Akhir Constraint Kejar Diskon  -->
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
