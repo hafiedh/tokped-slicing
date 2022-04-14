@@ -3,43 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndroidStudioProjects/ujian_design/app/src/main/res/drawable/ic_feed.xml" value="0.1815" />
-        <entry key="..\:/AndroidStudioProjects/ujian_design/app/src/main/res/drawable/ic_home.xml" value="0.1815" />
-        <entry key="..\:/AndroidStudioProjects/ujian_design/app/src/main/res/drawable/ic_official_store.xml" value="0.1815" />
-        <entry key="..\:/AndroidStudioProjects/ujian_design/app/src/main/res/drawable/ic_transaksi.xml" value="0.1815" />
-        <entry key="..\:/AndroidStudioProjects/ujian_design/app/src/main/res/drawable/ic_wishlist.xml" value="0.1815" />
-        <entry key="..\:/AndroidStudioProjects/ujian_design/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/AndroidStudioProjects/ujian_design/app/src/main/res/layout/fragment_feed.xml" value="0.22826086956521738" />
-        <entry key="..\:/AndroidStudioProjects/ujian_design/app/src/main/res/layout/fragment_home.xml" value="0.22826086956521738" />
-        <entry key="..\:/AndroidStudioProjects/ujian_design/app/src/main/res/layout/fragment_official_store.xml" value="0.20471014492753623" />
-        <entry key="..\:/AndroidStudioProjects/ujian_design/app/src/main/res/layout/fragment_transaksi.xml" value="0.20471014492753623" />
-        <entry key="..\:/AndroidStudioProjects/ujian_design/app/src/main/res/layout/fragment_wishlist.xml" value="0.20471014492753623" />
-        <entry key="..\:/AndroidStudioProjects/ujian_design/app/src/main/res/menu-v26/menu_main.xml" value="0.25" />
-        <entry key="..\:/AndroidStudioProjects/ujian_design/app/src/main/res/menu/menu.xml" value="0.25" />
-        <entry key="..\:/AndroidStudioProjects/ujian_design/app/src/main/res/menu/menu_main.xml" value="0.1" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1085" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/drawable/ic_bangga_local.xml" value="0.1275" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/drawable/ic_feed.xml" value="0.1085" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/drawable/ic_home.xml" value="0.1085" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1355" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/drawable/ic_live_shop.xml" value="0.1275" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/drawable/ic_official_selected.xml" value="0.1265" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/drawable/ic_official_store.xml" value="0.1335" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/drawable/ic_peduli_lindungi.xml" value="0.1275" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/drawable/ic_smartphone.xml" value="0.1275" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/drawable/ic_toped_seru.xml" value="0.1275" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/drawable/ic_transaksi.xml" value="0.1085" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/drawable/ic_wishlist.xml" value="0.1085" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/layout/activity_main.xml" value="0.23802083333333332" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/layout/fragment_feed.xml" value="0.23802083333333332" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/layout/fragment_home.xml" value="0.2" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/layout/fragment_official_store.xml" value="0.23802083333333332" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/layout/fragment_transaksi.xml" value="0.23802083333333332" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/layout/fragment_wishlist.xml" value="0.23802083333333332" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/layout/image_item.xml" value="0.184375" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/layout/item_recycler_menu.xml" value="0.23802083333333332" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/menu/menu_main.xml" value="0.23802083333333332" />
-        <entry key="..\:/Users/pram/Desktop/Main Bootcamp Android/Tokopedia Clone/ujian_design_team_3/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.108" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.134" />
+        <entry key="app/src/main/res/drawable-v24/ic_menu.xml" value="0.134" />
+        <entry key="app/src/main/res/drawable-v24/ic_search.xml" value="0.134" />
+        <entry key="app/src/main/res/drawable/background.xml" value="0.135" />
+        <entry key="app/src/main/res/drawable/bg_edittext.xml" value="0.135" />
+        <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.134" />
+        <entry key="app/src/main/res/drawable/ic_email.xml" value="0.134" />
+        <entry key="app/src/main/res/drawable/ic_feed.xml" value="0.134" />
+        <entry key="app/src/main/res/drawable/ic_home.xml" value="0.134" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.134" />
+        <entry key="app/src/main/res/drawable/ic_official_store.xml" value="0.134" />
+        <entry key="app/src/main/res/drawable/ic_shopping.xml" value="0.134" />
+        <entry key="app/src/main/res/drawable/ic_transaksi.xml" value="0.134" />
+        <entry key="app/src/main/res/drawable/ic_wishlist.xml" value="0.134" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.14175724637681159" />
+        <entry key="app/src/main/res/layout/bg_edittext.xml" value="0.14175724637681159" />
+        <entry key="app/src/main/res/layout/fragment_feed.xml" value="0.14175724637681159" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.40070921985815605" />
+        <entry key="app/src/main/res/layout/fragment_official_store.xml" value="0.1539855072463768" />
+        <entry key="app/src/main/res/layout/search_edit_text.xml" value="0.2736847366111866" />
+        <entry key="app/src/main/res/menu/menu_appbar.xml" value="0.25338287353515626" />
+        <entry key="app/src/main/res/menu/menu_main.xml" value="0.25783081054687507" />
       </map>
     </option>
   </component>

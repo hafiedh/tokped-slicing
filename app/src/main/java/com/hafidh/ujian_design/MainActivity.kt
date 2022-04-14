@@ -24,22 +24,42 @@ class MainActivity : AppCompatActivity() {
         binding.bnvMain.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.menu_main_home -> {
+                    stopFragment(FeedFragment())
+                    stopFragment(OfficialStoreFragment())
+                    stopFragment(TransaksiFragment())
+                    stopFragment(WishlistFragment())
                     replaceFragment(HomeFragment())
                     true
                 }
                 R.id.menu_main_feed -> {
+                    stopFragment(HomeFragment())
+                    stopFragment(OfficialStoreFragment())
+                    stopFragment(TransaksiFragment())
+                    stopFragment(WishlistFragment())
                     replaceFragment(FeedFragment())
                     true
                 }
                 R.id.menu_main_official_store -> {
+                    stopFragment(HomeFragment())
+                    stopFragment(FeedFragment())
+                    stopFragment(TransaksiFragment())
+                    stopFragment(WishlistFragment())
                     replaceFragment(OfficialStoreFragment())
                     true
                 }
                 R.id.menu_main_wishlist -> {
+                    stopFragment(HomeFragment())
+                    stopFragment(FeedFragment())
+                    stopFragment(TransaksiFragment())
+                    stopFragment(HomeFragment())
                     replaceFragment(WishlistFragment())
                     true
                 }
                 R.id.menu_main_transaksi -> {
+                    stopFragment(HomeFragment())
+                    stopFragment(FeedFragment())
+                    stopFragment(WishlistFragment())
+                    stopFragment(HomeFragment())
                     replaceFragment(TransaksiFragment())
                     true
                 }
@@ -55,4 +75,10 @@ class MainActivity : AppCompatActivity() {
             .commit()
     }
 
+    // stop fragment
+    private fun stopFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .remove(fragment)
+            .commit()
+    }
 }

@@ -22,13 +22,17 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
     // init view pager
     private fun initViewPager() {
-        val img = listOf(R.drawable.iklan_banner_satu, R.drawable.iklan_banner_dua, R.drawable.iklan_banner_tiga)
+        val img = listOf(
+            R.drawable.iklan_banner_satu,
+            R.drawable.iklan_banner_dua,
+            R.drawable.iklan_banner_tiga
+        )
         binding.pagerSlider.adapter = ViewPagerAdapter(img)
         binding.pagerSlider.orientation = ViewPager2.ORIENTATION_HORIZONTAL
         binding.pagerSlider.currentItem = 0
         binding.pagerSlider.offscreenPageLimit = 2
 
-        //auto slide
+        // auto slider inside fragment
         val handler = Handler(Looper.getMainLooper())
         val runnable = object : Runnable {
             override fun run() {
@@ -40,9 +44,17 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
                 handler.postDelayed(this, 3000)
             }
         }
-
-        handler.postDelayed(runnable, 3000)
+        handler.postDelayed(runnable, 2000)
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        // remove auto slider inside fragment
+        val handler = Handler(Looper.getMainLooper())
+        handler.removeCallbacksAndMessages(null)
+
+        //remove adapter
+        binding.pagerSlider.adapter = null
+    }
 
 }
