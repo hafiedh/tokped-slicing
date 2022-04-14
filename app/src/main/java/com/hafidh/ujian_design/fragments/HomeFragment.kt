@@ -10,14 +10,18 @@ import androidx.viewbinding.ViewBinding
 import androidx.viewpager2.widget.ViewPager2
 import com.hafidh.ujian_design.DataSource
 import com.hafidh.ujian_design.R
+import com.hafidh.ujian_design.adapters.MenuTopAdapter
 import com.hafidh.ujian_design.adapters.VideoAdapter
 import com.hafidh.ujian_design.adapters.ViewPagerAdapter
+import com.hafidh.ujian_design.data.Menu
 import com.hafidh.ujian_design.data.VideoDiskon
 import com.hafidh.ujian_design.databinding.FragmentHomeBinding
 
 class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     private lateinit var videoAdapter: VideoAdapter
-    private var list: ArrayList<VideoDiskon> = arrayListOf()
+    private var listVideo: ArrayList<VideoDiskon> = arrayListOf()
+    private var listMenuTop: ArrayList<Menu> = arrayListOf()
+    private var listMenuBottom: ArrayList<Menu> = arrayListOf()
 
 
     override val bindingInflater: (LayoutInflater) -> ViewBinding
@@ -25,7 +29,9 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.toolbar.inflateMenu(R.menu.menu_appbar)
+        setRecyclerViewMenuTop()
         initViewPager()
+        setRecyclerViewMenuBottom()
         setUpRecyclerViewVideo()
     }
 
@@ -58,8 +64,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
     // set recyclerview horizontal
     private fun setUpRecyclerViewVideo() {
-        list.addAll(DataSource.listData)
-        videoAdapter = VideoAdapter(list)
+        listVideo.addAll(DataSource.listDataVideo)
+        videoAdapter = VideoAdapter(listVideo)
         binding.rvVideo.apply {
             setHasFixedSize(true)
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
@@ -67,6 +73,25 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         }
     }
 
+    private fun setRecyclerViewMenuTop() {
+        listMenuTop.addAll(DataSource.listDataMenuTop)
+        binding.rvTopMenu.apply {
+            setHasFixedSize(true)
+            isNestedScrollingEnabled = false
+            layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+            adapter = MenuTopAdapter(listMenuTop)
+        }
+    }
+
+    private fun setRecyclerViewMenuBottom() {
+        listMenuBottom.addAll(DataSource.listDataMenuBottom)
+        binding.rvBottomMenu.apply {
+            setHasFixedSize(true)
+            isNestedScrollingEnabled = false
+            layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+            adapter = MenuTopAdapter(listMenuBottom)
+        }
+    }
 
 
     override fun onDestroyView() {
@@ -77,9 +102,12 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
         //remove adapter
         binding.pagerSlider.adapter = null
+//
+//        //remove adapter
+        binding.rvVideo.adapter = null
 
         //remove adapter
-        binding.rvVideo.adapter = null
+        binding.rvTopMenu.adapter = null
     }
 
 }
