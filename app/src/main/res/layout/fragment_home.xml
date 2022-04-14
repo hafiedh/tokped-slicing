@@ -179,7 +179,7 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
-
+    <!--  Constraint Mini Menu  -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout1"
         android:layout_width="match_parent"
@@ -187,7 +187,7 @@
         android:layout_marginTop="150dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
+        <!--  HorizontalScroll untuk mini menu   -->
         <HorizontalScrollView
             android:id="@+id/horizontalScrollView"
             android:layout_width="0dp"
@@ -197,26 +197,26 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
-
+            <!--  linear untuk membungkus item secara horizontal   -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
-
+                <!--  Cardview for grouping logo image and text   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvGridMenuTitle1"
                     android:layout_width="65dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     app:cardElevation="0dp">
-
+                    <!--  Image logo mini menu  -->
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="14dp"
                         android:src="@drawable/ic_official_selected" />
-
+                    <!--  Text mini menu  -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -226,21 +226,21 @@
                         android:textAlignment="center"
                         android:textSize="11sp" />
                 </androidx.cardview.widget.CardView>
-
+                <!--  Cardview for grouping logo image and text   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvGridMenuTitle2"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_marginStart="11dp"
                     app:cardElevation="0dp">
-
+                    <!--  Image logo mini menu  -->
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="8dp"
                         android:src="@drawable/ic_view_more" />
-
+                    <!--  Text mini menu  -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -250,21 +250,21 @@
                         android:textAlignment="center"
                         android:textSize="10.5sp" />
                 </androidx.cardview.widget.CardView>
-
+                <!--  Cardview for grouping logo image and text   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvGridMenuTitle3"
                     android:layout_width="65dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="11dp"
                     app:cardElevation="0dp">
-
+                    <!--  Image logo mini menu  -->
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="15dp"
                         android:src="@drawable/ic_daily_needs" />
-
+                    <!--  Text mini menu  -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -274,21 +274,21 @@
                         android:textAlignment="center"
                         android:textSize="11sp" />
                 </androidx.cardview.widget.CardView>
-
+                <!--  Cardview for grouping logo image and text   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvGridMenuTitle4"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_marginStart="15dp"
                     app:cardElevation="0dp">
-
+                    <!--  Image logo mini menu  -->
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="8dp"
                         android:src="@drawable/ic_electronic" />
-
+                    <!--  Text mini menu  -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -298,21 +298,21 @@
                         android:textAlignment="center"
                         android:textSize="11sp" />
                 </androidx.cardview.widget.CardView>
-
+                <!--  Cardview for grouping logo image and text   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvGridMenuTitle5"
                     android:layout_width="65dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     app:cardElevation="0dp">
-
+                    <!--  Image logo mini menu  -->
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="14dp"
                         android:src="@drawable/ic_topup" />
-
+                    <!--  Text mini menu  -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -322,21 +322,21 @@
                         android:textAlignment="center"
                         android:textSize="11sp" />
                 </androidx.cardview.widget.CardView>
-
+                <!--  Cardview for grouping logo image and text   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvGridMenuTitle6"
                     android:layout_width="65dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     app:cardElevation="0dp">
-
+                    <!--  Image logo mini menu  -->
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="14dp"
                         android:src="@drawable/ic_travel" />
-
+                    <!--  Text mini menu  -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -346,21 +346,21 @@
                         android:textAlignment="center"
                         android:textSize="11sp" />
                 </androidx.cardview.widget.CardView>
-
+                <!--  Cardview for grouping logo image and text   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvGridMenuTitle7"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:layout_marginStart="11dp"
                     app:cardElevation="0dp">
-
+                    <!--  Image logo mini menu  -->
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="8dp"
                         android:src="@drawable/ic_finance" />
-
+                    <!--  Text mini menu  -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -370,21 +370,21 @@
                         android:textAlignment="center"
                         android:textSize="11sp" />
                 </androidx.cardview.widget.CardView>
-
+                <!--  Cardview for grouping logo image and text   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvGridMenuTitle8"
                     android:layout_width="65dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     app:cardElevation="0dp">
-
+                    <!--  Image logo mini menu  -->
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="14dp"
                         android:src="@drawable/ic_smartphone" />
-
+                    <!--  Text mini menu  -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -394,21 +394,21 @@
                         android:textAlignment="center"
                         android:textSize="11sp" />
                 </androidx.cardview.widget.CardView>
-
+                <!--  Cardview for grouping logo image and text   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvGridMenuTitle9"
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     app:cardElevation="0dp">
-
+                    <!--  Image logo mini menu  -->
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="14dp"
                         android:src="@drawable/ic_party_tools" />
-
+                    <!--  Text mini menu  -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -418,21 +418,21 @@
                         android:textAlignment="center"
                         android:textSize="11sp" />
                 </androidx.cardview.widget.CardView>
-
+                <!--  Cardview for grouping logo image and text   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvGridMenuTitle10"
                     android:layout_width="65dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     app:cardElevation="0dp">
-
+                    <!--  Image logo mini menu  -->
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="14dp"
                         android:src="@drawable/ic_office" />
-
+                    <!--  Text mini menu  -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -445,6 +445,7 @@
             </LinearLayout>
         </HorizontalScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--  End Constraint Mini Menu  -->
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/pager_slider"
@@ -457,6 +458,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout1" />
 
+    <!--  Constraint Mini Menu 2 -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
@@ -464,7 +466,7 @@
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pager_slider">
-
+        <!--  HorizontalScroll Mini Menu  -->
         <HorizontalScrollView
             android:id="@+id/hzScrollView2"
             android:layout_width="0dp"
@@ -474,26 +476,26 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
-
+            <!--  linear untuk menampung item secara horizontal  -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
-
+                <!--  Cardview for grouping logo image and text   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvMenuTitle1"
                     android:layout_width="65dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     app:cardElevation="0dp">
-
+                    <!--  Image logo mini menu  -->
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="14dp"
                         android:src="@drawable/ic_peduli_lindungi" />
-
+                    <!--  Text mini menu  -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -503,21 +505,21 @@
                         android:textAlignment="center"
                         android:textSize="11sp" />
                 </androidx.cardview.widget.CardView>
-
+                <!--  Cardview for grouping logo image and text   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvMenuTitle2"
                     android:layout_width="65dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="11dp"
                     app:cardElevation="0dp">
-
+                    <!--  Image logo mini menu  -->
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="14dp"
                         android:src="@drawable/ic_bazzar" />
-
+                    <!--  Text mini menu  -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -527,21 +529,21 @@
                         android:textAlignment="center"
                         android:textSize="11sp" />
                 </androidx.cardview.widget.CardView>
-
+                <!--  Cardview for grouping logo image and text   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvMenuTitle3"
                     android:layout_width="65dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="11dp"
                     app:cardElevation="0dp">
-
+                    <!--  Image logo mini menu  -->
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="15dp"
                         android:src="@drawable/ic_live_shop" />
-
+                    <!--  Text mini menu  -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -551,21 +553,21 @@
                         android:textAlignment="center"
                         android:textSize="11sp" />
                 </androidx.cardview.widget.CardView>
-
+                <!--  Cardview for grouping logo image and text   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvMenuTitle4"
                     android:layout_width="65dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     app:cardElevation="0dp">
-
+                    <!--  Image logo mini menu  -->
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="14dp"
                         android:src="@drawable/ic_toped_seru" />
-
+                    <!--  Text mini menu  -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -575,21 +577,21 @@
                         android:textAlignment="center"
                         android:textSize="11sp" />
                 </androidx.cardview.widget.CardView>
-
+                <!--  Cardview for grouping logo image and text   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvMenuTitle5"
                     android:layout_width="65dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     app:cardElevation="0dp">
-
+                    <!--  Image logo mini menu  -->
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="14dp"
                         android:src="@drawable/ic_bangga_local" />
-
+                    <!--  Text mini menu  -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -599,21 +601,21 @@
                         android:textAlignment="center"
                         android:textSize="11sp" />
                 </androidx.cardview.widget.CardView>
-
+                <!--  Cardview for grouping logo image and text   -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvMenuTitle6"
                     android:layout_width="65dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     app:cardElevation="0dp">
-
+                    <!--  Image logo mini menu  -->
                     <ImageView
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="14dp"
                         android:src="@drawable/ic_cod" />
-
+                    <!--  Text mini menu  -->
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -626,6 +628,7 @@
             </LinearLayout>
         </HorizontalScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--  End Constraint Mini Menu 2 -->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
