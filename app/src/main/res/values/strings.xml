@@ -27,6 +27,12 @@
     <string name="scnd_menu_tokped_6">Bayar di\nTempat</string>
     <string name="scnd_menu_tokped_7">Promo di\nSurabaya</string>
     <string name="iklan">Iklan</string>
+    <string name="video_title">Video menarik untukmu</string>
+    <string name="see_more_video">Lihat semua</string>
+    <string name="watcher_video_title">2.5 rb</string>
+    <string name="dummy_diskon">Diskon 70%</string>
+    <string name="dummy_video_title_diskon">Alat facial treatment cuman 100rb?</string>
+    <string name="dummy_video_store">Hafiedh store</string>
     <!--  End String Menu Scroll  -->
 
 </resources>
