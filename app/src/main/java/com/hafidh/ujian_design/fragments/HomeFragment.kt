@@ -1,10 +1,12 @@
 package com.hafidh.ujian_design.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
+import androidx.cardview.widget.CardView
 import androidx.viewbinding.ViewBinding
 import androidx.viewpager2.widget.ViewPager2
 import com.hafidh.ujian_design.R
@@ -18,6 +20,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.toolbar.inflateMenu(R.menu.menu_appbar)
         initViewPager()
+
+
     }
 
     // init view pager
@@ -56,5 +60,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         //remove adapter
         binding.pagerSlider.adapter = null
     }
+
 
 }
