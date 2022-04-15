@@ -50,24 +50,26 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     // inisiasi countDownTimer dengan set perhitungan mundur /1000
         countDownTimer = object : CountDownTimer(timer,1000){
         // alt enter in object to create member onTIck and onFinish
+        // ketika cd finish tulis logic di sini
+        override fun onFinish() {
+            Toast.makeText(activity, "Diskon Habis", Toast.LENGTH_SHORT).show()
+        }
             // millisUntilFInished memiliki default tipe data Long
             override fun onTick(millisUntilFinished: Long) {
                 timer = millisUntilFinished
                 setTextTimer()
             }
-            override fun onFinish() {
-                TODO("Not yet implemented")
-            }
+
         }.start()
     }
     // set text timer
     fun setTextTimer() {
         // cd menit 600000/1000 = 600 / 60 = 10 menit
-        var m = (timer / 1000) / 60
+        val m = (timer / 1000) / 60
         // cd detik 600 mod 60 = 0 menit = 60 detik
-        var s = (timer / 1000) % 60
+        val s = (timer / 1000) % 60
         // set format output text
-        var format = String.format("%02d menit %2d detik", m, s)
+        val format = String.format("%02d menit %2d detik", m, s)
         // set format to textView3
         binding.textView3.setText(format)
     }
