@@ -403,12 +403,12 @@
                 android:id="@+id/rv_diskon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/bg_linear"
+                android:paddingVertical="16dp"
                 android:layout_marginTop="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/const_kejar_diskon" />
-
-            <!--         Mengerjakan recycler view untuk kejar diskon disini-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
