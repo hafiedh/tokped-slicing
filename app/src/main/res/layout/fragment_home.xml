@@ -80,10 +80,28 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/tv_address"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
         android:textColor="@android:color/white"
         app:layout_constraintStart_toEndOf="@+id/location"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/address_detail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/tv_address_detail"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/address"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_dropdown"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/address_detail"
+        app:layout_constraintTop_toBottomOf="@id/guideline2"/>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/payment_saldo"
@@ -252,7 +270,7 @@
                 android:alpha="0.7"
                 android:paddingEnd="12dp"
                 android:text="@string/see_more_video"
-                android:textColor="#00880C"
+                android:textColor="#08A619"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/rv_bottom_menu"

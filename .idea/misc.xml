@@ -10,6 +10,7 @@
         <entry key="app/src/main/res/drawable/background.xml" value="0.135" />
         <entry key="app/src/main/res/drawable/bg_edittext.xml" value="0.135" />
         <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.134" />
+        <entry key="app/src/main/res/drawable/ic_dropdown.xml" value="0.135" />
         <entry key="app/src/main/res/drawable/ic_email.xml" value="0.134" />
         <entry key="app/src/main/res/drawable/ic_feed.xml" value="0.134" />
         <entry key="app/src/main/res/drawable/ic_home.xml" value="0.134" />
@@ -18,14 +19,15 @@
         <entry key="app/src/main/res/drawable/ic_shopping.xml" value="0.134" />
         <entry key="app/src/main/res/drawable/ic_transaksi.xml" value="0.134" />
         <entry key="app/src/main/res/drawable/ic_wishlist.xml" value="0.134" />
+        <entry key="app/src/main/res/drawable/rounded_bg_item_green.xml" value="0.1925" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.14175724637681159" />
         <entry key="app/src/main/res/layout/bg_edittext.xml" value="0.14175724637681159" />
         <entry key="app/src/main/res/layout/fragment_feed.xml" value="0.14175724637681159" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2623196324558123" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2601208409519061" />
         <entry key="app/src/main/res/layout/fragment_official_store.xml" value="0.1539855072463768" />
         <entry key="app/src/main/res/layout/menu_card_top_item.xml" value="1.060021884199502" />
         <entry key="app/src/main/res/layout/search_edit_text.xml" value="0.2736847366111866" />
-        <entry key="app/src/main/res/layout/video_card_item.xml" value="0.6360382080078125" />
+        <entry key="app/src/main/res/layout/video_card_item.xml" value="0.43814697265625" />
         <entry key="app/src/main/res/menu/menu_appbar.xml" value="0.25338287353515626" />
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.25783081054687507" />
       </map>
