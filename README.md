@@ -1,1 +1,1 @@
-|![](app/src/main/assets/contoh_app.png?raw=true)|
+|![](app/src/main/assets/contoh_app.jpg?raw=true)|
