@@ -1,5 +1,6 @@
 package com.hafidh.ujian_design
 
+import com.hafidh.ujian_design.data.DiscountCollection
 import com.hafidh.ujian_design.data.Menu
 import com.hafidh.ujian_design.data.VideoDiskon
 
@@ -44,6 +45,43 @@ object DataSource {
         "Perlengkapan Pesta",
         "Office and Stationery"
     )
+    //for RV Discount
+    private val discountBanner = arrayOf(
+        R.drawable.contoh_product_lima,
+        R.drawable.contoh_product_enam,
+        R.drawable.contoh_product_tujuh,
+        R.drawable.contoh_product_delapan
+    )
+    private val discountPrice = arrayOf(
+        "Rp. 80.000",
+        "Rp. 76.000",
+        "Rp. 35.000",
+        "Rp. 75.000"
+    )
+    private val discountPercent = arrayOf(
+        "24%",
+        "35%",
+        "65%",
+        "70%"
+    )
+    private val discountStartPrice = arrayOf(
+        "Rp. 54.000",
+        "Rp. 46.000",
+        "Rp. 25.000",
+        "Rp. 61.000"
+    )
+    private val discountCity = arrayOf(
+        "Jawa",
+        "Sulawesi",
+        "Sumatera",
+        "Kalimantan"
+    )
+    private val discountProgressBar = arrayOf(
+        80,
+        56,
+        75,
+        95
+    )
 
     private val menuIconBottom =
         arrayOf(
@@ -74,6 +112,22 @@ object DataSource {
                 video.titleVideo = title[position]
                 video.storeVideo = store[position]
                 list.add(video)
+            }
+            return list
+        }
+
+    val listDataPromo: ArrayList<DiscountCollection>
+        get() {
+            val list = arrayListOf<DiscountCollection>()
+            for (position in discountBanner.indices) {
+                val discount = DiscountCollection()
+                discount.discountBanner = discountBanner[position]
+                discount.discountPrice = discountPrice[position]
+                discount.discountPercent = discountPercent[position]
+                discount.discountStartPrice = discountStartPrice[position]
+                discount.discountCity = discountCity[position]
+                discount.discountProgressBar = discountProgressBar[position]
+                list.add(discount)
             }
             return list
         }

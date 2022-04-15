@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/discount_banner"
+            android:layout_width="160dp"
+            android:layout_height="170dp"
+            android:foreground="#1A000000"
+            android:src="@drawable/bug"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/discount_price"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:text="Rp. 69.000"
+            android:textColor="#4e524f"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/discount_banner" />
+
+        <TextView
+            android:id="@+id/discount_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rounded_bg_item_red_discount"
+            android:paddingLeft="2dp"
+            android:paddingEnd="2dp"
+            android:text="26%"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/discount_price" />
+
+        <TextView
+            android:id="@+id/discount_start_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Rp. 50.000"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/discount_percent"
+            app:layout_constraintStart_toEndOf="@+id/discount_percent"
+            app:layout_constraintTop_toTopOf="@+id/discount_percent" />
+
+        <TextView
+            android:id="@+id/discount_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/ic_official_selected_small"
+            android:drawablePadding="5dp"
+            android:text="Jakarta Barat"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/discount_percent"
+            app:layout_constraintTop_toBottomOf="@+id/discount_percent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="1dp"
+            app:layout_constraintStart_toStartOf="@+id/discount_city"
+            app:layout_constraintTop_toBottomOf="@+id/discount_city"
+            app:srcCompat="@drawable/bebas_ongkir" />
+
+        <ProgressBar
+            android:id="@+id/discount_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:progress="89"
+            android:progressTint="@color/design_default_color_error"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:text="Segera Berakhir"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/discount_progress_bar"
+            app:layout_constraintTop_toBottomOf="@+id/discount_progress_bar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

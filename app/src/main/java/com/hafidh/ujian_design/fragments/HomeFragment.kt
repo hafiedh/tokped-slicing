@@ -10,9 +10,11 @@ import androidx.viewbinding.ViewBinding
 import androidx.viewpager2.widget.ViewPager2
 import com.hafidh.ujian_design.DataSource
 import com.hafidh.ujian_design.R
+import com.hafidh.ujian_design.adapters.DiscountAdapter
 import com.hafidh.ujian_design.adapters.MenuTopAdapter
 import com.hafidh.ujian_design.adapters.VideoAdapter
 import com.hafidh.ujian_design.adapters.ViewPagerAdapter
+import com.hafidh.ujian_design.data.DiscountCollection
 import com.hafidh.ujian_design.data.Menu
 import com.hafidh.ujian_design.data.VideoDiskon
 import com.hafidh.ujian_design.databinding.FragmentHomeBinding
@@ -20,6 +22,8 @@ import com.hafidh.ujian_design.databinding.FragmentHomeBinding
 class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     private lateinit var videoAdapter: VideoAdapter
     private var listVideo: ArrayList<VideoDiskon> = arrayListOf()
+    private lateinit var discountAdapter: DiscountAdapter
+    private var listDiscount: ArrayList<DiscountCollection> = arrayListOf()
     private var listMenuTop: ArrayList<Menu> = arrayListOf()
     private var listMenuBottom: ArrayList<Menu> = arrayListOf()
 
@@ -33,7 +37,9 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         initViewPager()
         setRecyclerViewMenuBottom()
         setUpRecyclerViewVideo()
+        setUpRecyclerViewPromo()
     }
+
 
     // init view pager
     private fun initViewPager() {
@@ -70,6 +76,16 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
             setHasFixedSize(true)
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
             adapter = videoAdapter
+        }
+    }
+
+    private fun setUpRecyclerViewPromo() {
+        listDiscount.addAll(DataSource.listDataPromo)
+        discountAdapter = DiscountAdapter(listDiscount)
+        binding.rvDiskon.apply {
+            setHasFixedSize(true)
+            layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+            adapter = discountAdapter
         }
     }
 
