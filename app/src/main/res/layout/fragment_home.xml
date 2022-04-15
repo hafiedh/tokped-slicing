@@ -20,26 +20,61 @@
             style="@style/ThemeOverlay.AppCompat.Light"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:layout_gravity="center"
-            android:gravity="center"
             app:layout_scrollFlags="scroll|enterAlways|snap">
 
-            <EditText
-                android:id="@+id/searchEditText"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_edittext"
-                android:cursorVisible="true"
-                android:drawableStart="@drawable/ic_search"
-                android:ems="10"
-                android:hint="@string/edt_search"
-                android:imeOptions="actionDone"
-                android:inputType="text"
-                android:paddingHorizontal="8dp"
-                android:paddingVertical="4dp"
-                android:textSize="12sp"
-                tools:ignore="TouchTargetSizeCheck"
-                android:autofillHints="Cari di Tokopedia" />
+                android:gravity="center_vertical"
+                android:paddingEnd="12dp"
+                android:weightSum="12"
+                android:orientation="horizontal"
+                tools:ignore="RtlSymmetry">
+
+                <EditText
+                    android:id="@+id/searchEditText"
+                    android:layout_weight="8"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext"
+                    android:cursorVisible="true"
+                    android:drawableStart="@drawable/ic_search"
+                    android:ems="10"
+                    android:hint="@string/edt_search"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:paddingHorizontal="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:paddingVertical="4dp"
+                    android:textSize="12sp"
+                    tools:ignore="TouchTargetSizeCheck"
+                    android:autofillHints="Cari di Tokopedia" />
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_message"/>
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_notification"/>
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_shopping"/>
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_menu"/>
+
+            </LinearLayout>
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
