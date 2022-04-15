@@ -32,13 +32,14 @@
                 android:cursorVisible="true"
                 android:drawableStart="@drawable/ic_search"
                 android:ems="10"
-                android:hint="Cari di Tokopedia"
+                android:hint="@string/edt_search"
                 android:imeOptions="actionDone"
                 android:inputType="text"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="4dp"
                 android:textSize="12sp"
-                tools:ignore="TouchTargetSizeCheck" />
+                tools:ignore="TouchTargetSizeCheck"
+                android:autofillHints="Cari di Tokopedia" />
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -53,7 +54,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/appBarLayout"
-        tools:ignore="NotSibling" />
+        tools:ignore="NotSibling"
+        android:contentDescription="@string/top_background_green" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -69,14 +71,15 @@
         android:layout_marginStart="16dp"
         android:src="@drawable/ic_location"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        android:contentDescription="@string/icon_location" />
 
     <TextView
         android:id="@+id/address"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="Dikirim ke Jl Imam Bonjol kp.durian"
+        android:text="@string/tv_address"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
         android:textColor="@android:color/white"
         app:layout_constraintStart_toEndOf="@+id/location"
@@ -108,15 +111,16 @@
                 android:src="@drawable/gopay"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/gopay_image" />
 
             <TextView
                 android:id="@+id/title_gopay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="GoPay &amp; Coins"
+                android:text="@string/tv_gopay"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 app:layout_constraintLeft_toRightOf="@id/img_gopay"
@@ -127,7 +131,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
-                android:text="Aktifkan"
+                android:text="@string/tv_aktifkan"
                 android:textColor="@color/primaryColor"
                 android:textSize="11sp"
                 android:textStyle="bold"
@@ -151,7 +155,8 @@
                 android:src="@drawable/member"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@id/ruler_card"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/member_image" />
 
             <TextView
                 android:id="@+id/title_member"
@@ -159,7 +164,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="Member Silver"
+                android:text="@string/tv_member_silver"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/img_member"
@@ -170,7 +175,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
-                android:text="23 Kupon Baru"
+                android:text="@string/tv_kupon"
                 android:textColor="@android:color/darker_gray"
                 android:textSize="11sp"
                 android:textStyle="bold"
