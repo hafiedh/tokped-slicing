@@ -370,7 +370,7 @@
                     android:drawablePadding="5dp"
                     android:paddingLeft="5dp"
                     android:paddingEnd="5dp"
-                    android:text="09 menit 26 detik"
+                    tools:text="09 menit 26 detik"
                     android:textColor="@color/white"
                     android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="@+id/const_kejar_diskon"

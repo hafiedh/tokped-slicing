@@ -1,6 +1,8 @@
 package com.hafidh.ujian_design
 
 import android.os.Bundle
+import android.os.CountDownTimer
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.hafidh.ujian_design.databinding.ActivityMainBinding
@@ -18,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
         supportActionBar?.setDisplayShowTitleEnabled(false)
     }
+
 
     private fun initBottomNavigation() {
         // set item with menu for bottom navigation and replace fragment base on user click
