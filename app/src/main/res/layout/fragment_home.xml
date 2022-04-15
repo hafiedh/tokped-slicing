@@ -247,7 +247,7 @@
                 android:alpha="0.7"
                 android:paddingEnd="12dp"
                 android:text="@string/see_more_video"
-                android:textColor="#0E5938"
+                android:textColor="#00880C"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/rv_bottom_menu"
@@ -257,6 +257,7 @@
                 android:id="@+id/rv_video"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvTitle_video" />
