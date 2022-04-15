@@ -49,6 +49,13 @@
     <string name="menu_notification">notification</string>
     <string name="menu_shopping">shopping</string>
     <string name="menu_hamburger">menu</string>
+    <string name="icon_dropdown">icon dropdown</string>
+    <string name="icon_menu">icon menu</string>
+    <string name="icon_shopping">icon shopping</string>
+    <string name="icon_notification">icon notification</string>
+    <string name="icon_message">icon message</string>
+    <string name="tv_kejar_diskon">Kejar Diskon</string>
+    <string name="tv_berakhir_dalam">Berakhir Dalam</string>
     <!--  End String Menu Scroll  -->
 
 </resources>
