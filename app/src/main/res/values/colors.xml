@@ -10,4 +10,5 @@
     <color name="primaryColor">#20ce7d</color>
     <color name="primaryLightColor">#68ffad</color>
     <color name="primaryDarkColor">#20ce7d</color>
+    <color name="cdTimerColor">#E81D1D</color>
 </resources>
