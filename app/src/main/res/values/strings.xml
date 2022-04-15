@@ -28,12 +28,27 @@
     <string name="scnd_menu_tokped_7">Promo di\nSurabaya</string>
     <string name="iklan">Iklan</string>
     <string name="video_title">Video menarik untukmu</string>
-    <string name="see_more_video">Lihat semua</string>
+    <string name="see_more_video">Lihat Semua</string>
     <string name="watcher_video_title">2.5 rb</string>
     <string name="dummy_diskon">Diskon 70%</string>
     <string name="dummy_video_title_diskon">Alat facial treatment cuman 100rb?</string>
     <string name="dummy_video_store">Hafiedh store</string>
     <string name="menu_main_official_store_menu">Official Store</string>
+    <string name="edt_search">Cari di Tokopedia</string>
+    <string name="top_background_green">top background green</string>
+    <string name="icon_location">icon location</string>
+    <string name="tv_address">Dikirim ke </string>
+    <string name="tv_address_detail">Jl Imam Bonjol kp.durian</string>
+    <string name="gopay_image">gopay image</string>
+    <string name="tv_gopay"><![CDATA[GoPay & Coins]]></string>
+    <string name="tv_aktifkan">Aktifkan</string>
+    <string name="member_image">member image</string>
+    <string name="tv_member_silver">Member Silver</string>
+    <string name="tv_kupon">23 Kupon Baru</string>
+    <string name="menu_message">message</string>
+    <string name="menu_notification">notification</string>
+    <string name="menu_shopping">shopping</string>
+    <string name="menu_hamburger">menu</string>
     <!--  End String Menu Scroll  -->
 
 </resources>

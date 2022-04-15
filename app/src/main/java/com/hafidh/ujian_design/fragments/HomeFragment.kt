@@ -32,7 +32,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         get() = FragmentHomeBinding::inflate
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        binding.toolbar.inflateMenu(R.menu.menu_appbar)
         setRecyclerViewMenuTop()
         initViewPager()
         setRecyclerViewMenuBottom()
