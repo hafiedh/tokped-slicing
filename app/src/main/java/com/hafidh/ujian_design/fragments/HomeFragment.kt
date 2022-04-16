@@ -1,6 +1,5 @@
 package com.hafidh.ujian_design.fragments
 
-import android.app.Activity
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.os.Handler
@@ -23,7 +22,7 @@ import com.hafidh.ujian_design.data.VideoDiskon
 import com.hafidh.ujian_design.databinding.FragmentHomeBinding
 
 class HomeFragment : BaseFragment<FragmentHomeBinding>() {
-    val valueTimer = 600_000L
+    private val valueTimer = 600_000L
     var timer = valueTimer
     lateinit var countDownTimer: CountDownTimer
     private lateinit var videoAdapter: VideoAdapter
@@ -47,13 +46,14 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
     // set function startTimer
     private fun startTimer() {
-    // inisiasi countDownTimer dengan set perhitungan mundur /1000
-        countDownTimer = object : CountDownTimer(timer,1000){
-        // alt enter in object to create member onTIck and onFinish
-        // ketika cd finish tulis logic di sini
-        override fun onFinish() {
-            Toast.makeText(activity, "Diskon Habis", Toast.LENGTH_SHORT).show()
-        }
+        // inisiasi countDownTimer dengan set perhitungan mundur /1000
+        countDownTimer = object : CountDownTimer(timer, 1000) {
+            // alt enter in object to create member onTick and onFinish
+            // ketika cd finish tulis logic di sini
+            override fun onFinish() {
+                Toast.makeText(activity, "Diskon Habis", Toast.LENGTH_SHORT).show()
+            }
+
             // millisUntilFInished memiliki default tipe data Long
             override fun onTick(millisUntilFinished: Long) {
                 timer = millisUntilFinished
@@ -62,6 +62,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
         }.start()
     }
+
     // set text timer
     fun setTextTimer() {
         // cd menit 600000/1000 = 600 / 60 = 10 menit
@@ -71,9 +72,9 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         // set format output text
         val format = String.format("%02d menit %2d detik", m, s)
         // set format to textView3
-        binding.textView3.setText(format)
-    }
+        binding.textView3.text = format
 
+    }
 
     // init view pager
     private fun initViewPager() {
